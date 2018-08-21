@@ -27,8 +27,10 @@ const ProductsList = props => {
             {filteredProducts.map(product =>
                 (
                     <div key = {product.id}>
-                        <img src={product.urls[0]} alt={product.name} />
+                        <img src={product.versions[0].url} alt={product.name} />
                         {product.name}
+                        <br/>
+                        {product.versions[0].price}
                     </div>
 
                 )

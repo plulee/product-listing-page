@@ -4,63 +4,167 @@ import * as cat from "../constants/Categories";
 const products = [
     {
         id: "1", name: "Sport Car",
-        urls: [
-            "/images/car-1-blue.jpg",
-            "/images/car-1-green.jpg",
-            "/images/car-1-orange.jpg",
-            "/images/car-1-red.jpg"
+        versions: [
+            {
+                color: col.BLUE,
+                url: "/images/car-1-blue.jpg",
+                price: "3$"
+            },
+            {
+                color: col.GREEN,
+                url: "/images/car-1-green.jpg",
+                price: "3.5$"
+            },
+            {
+                color: col.ORANGE,
+                url: "/images/car-1-orange.jpg",
+                price: "2$"
+            },
+            {
+                color: col.RED,
+                url: "/images/car-1-red.jpg",
+                price: "2$"
+            }
         ],
         categories: [cat.CARS], colors: [col.BLUE, col.GREEN, col.ORANGE, col.RED]
     },
     {
         id: "2", name: "Porsche Cabrio",
-        urls: [
-            "/images/car-2-blue.jpg",
-            "/images/car-2-green.jpg",
-            "/images/car-2-pink.jpg",
-            "/images/car-2-red.jpg",
-            "/images/car-2-yellow.jpg",
+        versions: [
+            {
+                color: col.BLUE,
+                url: "/images/car-2-blue.jpg",
+                price: "4$"
+            },
+            {
+                color: col.GREEN,
+                url: "/images/car-2-green.jpg",
+                price: "7$"
+            },
+            {
+                color: col.PINK,
+                url: "/images/car-2-pink.jpg",
+                price: "1$"
+            },
+            {
+                color: col.RED,
+                url: "/images/car-2-red.jpg",
+                price: "2$"
+            },
+            {
+                color: col.YELLOW,
+                url: "/images/car-2-yellow.jpg",
+                price: "4$"
+            }
         ],
         categories: [cat.CARS], colors: [col.BLUE, col.GREEN, col.PINK, col.RED, col.YELLOW]
     },
     {
         id: "3", name: "Old car",
-        urls: [
-            "/images/car-3-blue.jpg",
-            "/images/car-3-green.jpg",
-            "/images/car-3-red.jpg",
-            "/images/car-3-yellow.jpg",
+        versions: [
+            {
+                color: col.BLUE,
+                url: "/images/car-3-blue.jpg",
+                price: "299$"
+            },
+            {
+                color: col.GREEN,
+                url: "/images/car-3-green.jpg",
+                price: "799$"
+            },
+            {
+                color: col.RED,
+                url: "/images/car-3-red.jpg",
+                price: "299$"
+            },
+            {
+                color: col.YELLOW,
+                url: "/images/car-3-yellow.jpg",
+                price: "499$"
+            }
         ],
         categories: [cat.CARS], colors: [col.BLUE, col.GREEN, col.RED, col.YELLOW]
     },
     {
         id: "4", name: "Boxing Gloves",
-        urls: [
-            "/images/gloves-1-blue.jpg",
-            "/images/gloves-1-green.jpg",
-            "/images/gloves-1-pink.jpg",
-            "/images/gloves-1-red.jpg",
-            "/images/gloves-1-yellow.jpg",
+        versions: [
+            {
+                color: col.BLUE,
+                url: "/images/gloves-1-blue.jpg",
+                price: "29$"
+            },
+            {
+                color: col.GREEN,
+                url: "/images/gloves-1-green.jpg",
+                price: "28$"
+            },
+            {
+                color: col.PINK,
+                url: "/images/gloves-1-pink.jpg",
+                price: "27$"
+            },
+            {
+                color: col.RED,
+                url: "/images/gloves-1-red.jpg",
+                price: "26$"
+            },
+            {
+                color: col.YELLOW,
+                url: "/images/gloves-1-yellow.jpg",
+                price: "25$"
+            }
         ],
         categories: [cat.GLOVES], colors: [col.BLUE, col.GREEN, col.PINK, col.RED, col.YELLOW]
     },
     {
         id: "5", name: "Work Gloves 2000",
-        urls: [
-            "/images/gloves-2-blue.jpg",
-            "/images/gloves-2-green.jpg",
-            "/images/gloves-2-orange.jpg",
-            "/images/gloves-2-pink.jpg",
+        versions: [
+            {
+                color: col.BLUE,
+                url: "/images/gloves-2-blue.jpg",
+                price: "19$"
+            },
+            {
+                color: col.GREEN,
+                url: "/images/gloves-2-green.jpg",
+                price: "20$"
+            },
+            {
+                color: col.ORANGE,
+                url: "/images/gloves-2-orange.jpg",
+                price: "21$"
+            },
+            {
+                color: col.PINK,
+                url: "/images/gloves-2-pink.jpg",
+                price: "22$"
+            }
         ],
         categories: [cat.GLOVES], colors: [col.BLUE, col.GREEN, col.ORANGE, col.PINK]
     },
     {
         id: "6", name: "Chair Supreme",
-        urls: [
-            "/images/chair-1-blue.jpg",
-            "/images/chair-1-gray.jpg",
-            "/images/chair-1-orange.jpg",
-            "/images/chair-1-red.jpg",
+        versions: [
+            {
+                color: col.BLUE,
+                url: "/images/chair-1-blue.jpg",
+                price: "68$"
+            },
+            {
+                color: col.GRAY,
+                url: "/images/chair-1-gray.jpg",
+                price: "67$"
+            },
+            {
+                color: col.ORANGE,
+                url: "/images/chair-1-orange.jpg",
+                price: "68$"
+            },
+            {
+                color: col.PINK,
+                url: "/images/chair-1-red.jpg",
+                price: "98$"
+            }
         ],
         categories: [cat.CHAIRS], colors: [col.BLUE, col.GRAY, col.ORANGE, col.RED]
     },
