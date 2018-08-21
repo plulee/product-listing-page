@@ -18,9 +18,7 @@ const ProductsList = props => {
             const checkCategories = checkFilterElements(product.categories, categories);
             const checkColors = checkFilterElements(product.colors, colors);
 
-            if (checkColors && checkCategories) {
-                return true;
-            }
+            return (checkColors && checkCategories);
         }
     );
 
@@ -29,6 +27,7 @@ const ProductsList = props => {
             {filteredProducts.map(product =>
                 (
                     <div key = {product.id}>
+                        <img src={product.urls[0]} alt={product.name} />
                         {product.name}
                     </div>
 
