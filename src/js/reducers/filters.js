@@ -10,14 +10,18 @@ const filters = (state = {...initialState}, action) => {
     case types.ADD_FILTER:
         {
             const newState = {...state};
-            newState[action.filterType] = [...new Set([...state[action.filterType], action.feature])]
+            const filter = action.filterType;
+            const featureToAdd = action.feature;
+            newState[filter] = [...new Set([...state[filter], featureToAdd])]
             return newState;
         }
 
     case types.REMOVE_FILTER:
         {
             const newState = {...state};
-            newState[action.filterType] = state[action.filterType].filter(feature => feature !== action.feature)
+            const filter = action.filterType;
+            const featureToRemove = action.feature;
+            newState[filter] = state[filter].filter(feature => feature !== featureToRemove)
             return newState;
         }
     default:
