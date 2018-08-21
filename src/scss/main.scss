@@ -21,4 +21,12 @@ body {
         padding-bottom: 2rem;
         padding-top: 2rem;
     }
+
+    button {
+        margin: 1rem;
+
+        &.active {
+            color: red;
+        }
+    }
 }

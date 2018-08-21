@@ -1,20 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
 import ErrorBoundary from "react-error-boundary";
 import { ProductsList } from "../containers/ProductsList";
+import { ChooseFilter } from "../containers/ChooseFilter";
 
-class App extends Component {
-    render() {
-        return (
-            <div className="container">
-                <ErrorBoundary>
-                    <h1>Product Listing Page</h1>
-                    <main>
-                        <ProductsList />
-                    </main>
-                </ErrorBoundary>
-            </div>
-        );
-    }
-}
+const App = () =>  (
+        <div className="container">
+            <ErrorBoundary>
+                <h1>Product Listing Page</h1>
+                <ChooseFilter />
+                <ProductsList />
+            </ErrorBoundary>
+        </div>
+);
 
 export default App;

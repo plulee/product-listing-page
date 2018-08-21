@@ -1,11 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const ProductsList = (props) => (
-    <section className="products">
-        { props.filters.colors[0] }
-    </section>
-);
+const ProductsList = (props) => {
+    const { colors, categories } = props.filters;
+
+    return (
+        <section className="products">
+            { colors }
+            { categories }
+        </section>
+    );
+};
 
 ProductsList.propTypes = {
     filters: PropTypes.shape({
