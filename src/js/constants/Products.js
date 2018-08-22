@@ -1,9 +1,10 @@
-import * as col from "../constants/Colors";
+import * as col from "../constants/ColorsNames";
 import * as cat from "../constants/Categories";
 
 const products = [
     {
         id: "1", name: "Sport Car",
+        categories: [cat.CARS],
         versions: [
             {
                 color: col.BLUE,
@@ -25,11 +26,11 @@ const products = [
                 url: "/images/car-1-red.jpg",
                 price: "2$"
             }
-        ],
-        categories: [cat.CARS], colors: [col.BLUE, col.GREEN, col.ORANGE, col.RED]
+        ]
     },
     {
         id: "2", name: "Porsche Cabrio",
+        categories: [cat.CARS],
         versions: [
             {
                 color: col.BLUE,
@@ -56,11 +57,11 @@ const products = [
                 url: "/images/car-2-yellow.jpg",
                 price: "4$"
             }
-        ],
-        categories: [cat.CARS], colors: [col.BLUE, col.GREEN, col.PINK, col.RED, col.YELLOW]
+        ]
     },
     {
         id: "3", name: "Old car",
+        categories: [cat.CARS],
         versions: [
             {
                 color: col.BLUE,
@@ -82,11 +83,11 @@ const products = [
                 url: "/images/car-3-yellow.jpg",
                 price: "499$"
             }
-        ],
-        categories: [cat.CARS], colors: [col.BLUE, col.GREEN, col.RED, col.YELLOW]
+        ]
     },
     {
         id: "4", name: "Boxing Gloves",
+        categories: [cat.GLOVES],
         versions: [
             {
                 color: col.BLUE,
@@ -113,11 +114,11 @@ const products = [
                 url: "/images/gloves-1-yellow.jpg",
                 price: "25$"
             }
-        ],
-        categories: [cat.GLOVES], colors: [col.BLUE, col.GREEN, col.PINK, col.RED, col.YELLOW]
+        ]
     },
     {
         id: "5", name: "Work Gloves 2000",
+        categories: [cat.GLOVES],
         versions: [
             {
                 color: col.BLUE,
@@ -139,11 +140,11 @@ const products = [
                 url: "/images/gloves-2-pink.jpg",
                 price: "22$"
             }
-        ],
-        categories: [cat.GLOVES], colors: [col.BLUE, col.GREEN, col.ORANGE, col.PINK]
+        ]
     },
     {
         id: "6", name: "Chair Supreme",
+        categories: [cat.CHAIRS],
         versions: [
             {
                 color: col.BLUE,
@@ -165,8 +166,7 @@ const products = [
                 url: "/images/chair-1-red.jpg",
                 price: "98$"
             }
-        ],
-        categories: [cat.CHAIRS], colors: [col.BLUE, col.GRAY, col.ORANGE, col.RED]
+        ]
     },
 ];
 

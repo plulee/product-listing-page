@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Filter from "./Filter";
-import * as colors from "../constants/Colors";
+import * as colorsNames from "../constants/ColorsNames";
 import * as categories from "../constants/Categories";
 import * as filterTypes from "../constants/FilterTypes";
+import Filter from "./Filter";
 
 const ChooseFilter = (props) => {
     return (
@@ -18,7 +18,7 @@ const ChooseFilter = (props) => {
                     />
                 )
             )}
-            {Object.values(colors).map((color,index) =>
+            {Object.values(colorsNames).map((color,index) =>
                 (
                     <Filter
                         key={index}

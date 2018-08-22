@@ -1,9 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import products from "../constants/Products";
+import Product from "./Product";
 
 const ProductsList = props => {
-    const { colors, categories } = props.filters;
+    const filters = props.filters;
 
     const checkFilterElements = (filteredArray, filterArray) => {
         if (filterArray.length > 0) {
@@ -15,8 +16,12 @@ const ProductsList = props => {
 
     const filteredProducts = products.filter(
         product => {
-            const checkCategories = checkFilterElements(product.categories, categories);
-            const checkColors = checkFilterElements(product.colors, colors);
+            let productColors = [];
+            for (let version of product.versions) {
+                productColors.push(version.color)
+            }
+            const checkColors = checkFilterElements(productColors, filters.colors);
+            const checkCategories = checkFilterElements(product.categories, filters.categories);
 
             return (checkColors && checkCategories);
         }
@@ -26,13 +31,11 @@ const ProductsList = props => {
         <section className="products">
             {filteredProducts.map(product =>
                 (
-                    <div key = {product.id}>
-                        <img src={product.versions[0].url} alt={product.name} />
-                        {product.name}
-                        <br/>
-                        {product.versions[0].price}
-                    </div>
-
+                    <Product
+                        id = {product.id}
+                        versions = {product.versions}
+                        name = {product.name}
+                    />
                 )
             )}
         </section>
