@@ -9,7 +9,6 @@ class Filter extends React.Component {
         };
     }
 
-
     render() {
         const handleButtonClick = () => {
             const currentState = this.state.active;
@@ -20,14 +19,13 @@ class Filter extends React.Component {
                 this.props.addFilterFunc();
                 this.setState({ active: true });
             }
-
         };
 
         return (
-            <button onClick={handleButtonClick} className={this.state.active ? 'active': null} >
+            <li onClick={handleButtonClick} className={this.state.active ? 'active': null} >
                 <div>filter</div>
                 <strong>{this.props.filterName}</strong>
-            </button>
+            </li>
         );
     }
 }

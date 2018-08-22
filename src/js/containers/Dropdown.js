@@ -1,10 +1,6 @@
 import { connect } from "react-redux";
-import ChooseFilterComponent from "../components/ChooseFilter";
+import DropdownComponent from "../components/Dropdown";
 import { addFilter, removeFilter} from "../actions";
-
-const mapStateToProps = state => ({
-    filters: state.filters
-});
 
 const mapDispatchToProps = (dispatch) => ({
     addFilter: (feature, filterType) => {
@@ -15,4 +11,6 @@ const mapDispatchToProps = (dispatch) => ({
     },
 });
 
-export const ChooseFilter = connect(mapStateToProps, mapDispatchToProps)(ChooseFilterComponent);
+const Dropdown = connect(() => ({}), mapDispatchToProps)(DropdownComponent);
+
+export default Dropdown;

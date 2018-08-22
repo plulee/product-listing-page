@@ -11,11 +11,14 @@ class Product extends React.Component {
         };
     }
 
+    handleButtonClick (index) {
+        this.setState({ chosenVersion: index });
+    };
 
     render() {
 
+
         const name = this.props.name;
-        const id = this.props.id;
         const versions = this.props.versions;
         const versionId = this.state.chosenVersion;
         const version = versions[versionId];
@@ -23,14 +26,14 @@ class Product extends React.Component {
         const price = version.price;
 
         return (
-            <div key = {id}>
+            <div>
                 <img src={imgUrl} alt={name} />
                 {name}
                 <br/>
                 {price}
                 {versions.map((version,index) =>
                     (
-                        <div style={{color: colorsHexes.get(version.color)}}>{index}</div>
+                        <button key={index} onClick={()=> {this.handleButtonClick(index)}} style={{color: colorsHexes.get(version.color)}}>{index}</button>
                     )
                 )}
             </div>
@@ -40,7 +43,6 @@ class Product extends React.Component {
 
 Product.propTypes = {
     name: PropTypes.string.isRequired,
-    id: PropTypes.number.isRequired,
     versions: PropTypes.array.isRequired,
 };
 

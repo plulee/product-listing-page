@@ -32,7 +32,7 @@ const ProductsList = props => {
             {filteredProducts.map(product =>
                 (
                     <Product
-                        id = {product.id}
+                        key = {product.id}
                         versions = {product.versions}
                         name = {product.name}
                     />

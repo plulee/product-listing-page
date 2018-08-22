@@ -1,7 +1,7 @@
 import React from "react";
 import ErrorBoundary from "react-error-boundary";
-import { ProductsList } from "../containers/ProductsList";
-import { ChooseFilter } from "../containers/ChooseFilter";
+import ProductsList from "../containers/ProductsList";
+import ChooseFilter from "./ChooseFilter";
 
 const App = () =>  (
         <div className="container">

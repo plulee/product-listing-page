@@ -5,4 +5,6 @@ const mapStateToProps = state => ({
     filters: state.filters,
 });
 
-export const ProductsList = connect(mapStateToProps, () => ({}))(ProductsListComponent);
+const ProductsList = connect(mapStateToProps, () => ({}))(ProductsListComponent);
+
+export default ProductsList;
