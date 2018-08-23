@@ -23,12 +23,4 @@ body {
         padding-bottom: 2rem;
         padding-top: 2rem;
     }
-
-    li {
-        margin: 1rem;
-
-        &.filters__menu-item--active {
-            color: red;
-        }
-    }
 }

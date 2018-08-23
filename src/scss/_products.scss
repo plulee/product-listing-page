@@ -1,0 +1,48 @@
+@import 'colors';
+@import 'constants';
+@import 'mixins';
+
+.product {
+    box-sizing: border-box;
+    display: inline-block;
+    max-width: 33.333%;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+
+    .product__image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .product__information {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        div {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .product__name {
+        font-size: 1.5rem;
+    }
+
+    .product__price {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .product__color-sample {
+        border: 0;
+        border-radius: 50%;
+        box-shadow: 1px 3px 11px #888888;
+        cursor: pointer;
+        margin-right: .5rem;
+        width: 1.5rem;
+        height: 1.5rem;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

@@ -7,34 +7,31 @@ class Dropdown extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            active: false,
+            opened: false,
         };
     }
 
     handleClickOutside (evt) {
           this.setState({
-            active: false
+            opened: false
           })
     }
 
     handleButtonClick () {
-        const currentState = this.state.active;
+        const currentState = this.state.opened;
         if (currentState) {
-            this.setState({ active: false });
+            this.setState({ opened: false });
         } else {
-            this.setState({ active: true });
+            this.setState({ opened: true });
         }
     }
 
     render() {
         const filterType = this.props.type;
-        let opened = "";
-        if (this.state.active) {
-            opened = "opened";
-        }
+        
         return (
             <div className="filters__dropdown">
-                <div className="filters__dropdown-name" onClick={() => {this.handleButtonClick()}} >{filterType}{opened}</div>
+                <div className={this.state.opened ? "filters__dropdown-name filters__dropdown-name--opened": "filters__dropdown-name"} onClick={() => {this.handleButtonClick()}} >{filterType}</div>
                 <ul className="filters__menu-items">
                     {Object.values(this.props.filters).map((filter,index) =>
                         (
