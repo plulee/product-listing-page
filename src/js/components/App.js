@@ -6,7 +6,7 @@ import ChooseFilter from "./ChooseFilter";
 const App = () =>  (
         <div className="container">
             <ErrorBoundary>
-                <h1>Product Listing Page</h1>
+                <h1>Product Listing</h1>
                 <ChooseFilter />
                 <ProductsList />
             </ErrorBoundary>

@@ -7,7 +7,7 @@ import Dropdown from "../containers/Dropdown";
 const ChooseFilter = () => {
     return (
         <section className="filters">
-            filters:
+            <span className="filters__title">filters:</span>
             <Dropdown filters={categories} type={filterTypes.CATEGORIES} />
             <Dropdown filters={colorsNames} type={filterTypes.COLORS} />
         </section>

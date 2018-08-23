@@ -16,14 +16,12 @@ class Product extends React.Component {
     };
 
     render() {
-
-
         const name = this.props.name;
         const versions = this.props.versions;
-        const versionId = this.state.chosenVersion;
-        const version = versions[versionId];
-        const imgUrl = version.url;
-        const price = version.price;
+        const chosenVersion = this.state.chosenVersion;
+        const chosenVersionData = versions[chosenVersion];
+        const imgUrl = chosenVersionData.url;
+        const price = chosenVersionData.price;
 
         return (
             <div className="product">

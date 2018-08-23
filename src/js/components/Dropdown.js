@@ -28,10 +28,11 @@ class Dropdown extends React.Component {
 
     render() {
         const filterType = this.props.type;
-        
+        const dropdownToggledClass = this.state.opened ? "filters__dropdown-toggle--opened": "";
+
         return (
             <div className="filters__dropdown">
-                <div className={this.state.opened ? "filters__dropdown-name filters__dropdown-name--opened": "filters__dropdown-name"} onClick={() => {this.handleButtonClick()}} >{filterType}</div>
+                <div className={`filters__dropdown-toggle ${dropdownToggledClass}`} onClick={() => {this.handleButtonClick()}} >{filterType}</div>
                 <ul className="filters__menu-items">
                     {Object.values(this.props.filters).map((filter,index) =>
                         (

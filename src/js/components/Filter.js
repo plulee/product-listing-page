@@ -9,20 +9,23 @@ class Filter extends React.Component {
         };
     }
 
+    handleButtonClick () {
+        const currentState = this.state.active;
+        if (currentState) {
+            this.props.removeFilterFunc();
+            this.setState({ active: false });
+        } else {
+            this.props.addFilterFunc();
+            this.setState({ active: true });
+        }
+    };
+
     render() {
-        const handleButtonClick = () => {
-            const currentState = this.state.active;
-            if (currentState) {
-                this.props.removeFilterFunc();
-                this.setState({ active: false });
-            } else {
-                this.props.addFilterFunc();
-                this.setState({ active: true });
-            }
-        };
+        const filterActiveClass = this.state.active ? "filters__menu-item--active": "";
 
         return (
-            <li onClick={handleButtonClick} className={this.state.active ? "filters__menu-item filters__menu-item--active": "filters__menu-item"} >
+            <li onClick={this.handleButtonClick.bind(this)} 
+                className={`filters__menu-item ${filterActiveClass}`}>
                 {this.props.filterName}
             </li>
         );

@@ -7,9 +7,14 @@ const products = [
         categories: [cat.CARS],
         versions: [
             {
+                color: col.ORANGE,
+                url: "/images/car-1-orange.jpg",
+                price: "2$"
+            },
+            {
                 color: col.RED,
                 url: "/images/car-1-red.jpg",
-                price: "2$"
+                price: "2.5$"
             },
             {
                 color: col.BLUE,
@@ -20,11 +25,6 @@ const products = [
                 color: col.GREEN,
                 url: "/images/car-1-green.jpg",
                 price: "3.5$"
-            },
-            {
-                color: col.ORANGE,
-                url: "/images/car-1-orange.jpg",
-                price: "2$"
             }
         ]
     },
@@ -60,9 +60,14 @@ const products = [
         ]
     },
     {
-        id: "3", name: "Old car",
+        id: "3", name: "Old-school car",
         categories: [cat.CARS],
         versions: [
+            {
+                color: col.YELLOW,
+                url: "/images/car-3-yellow.jpg",
+                price: "499$"
+            },
             {
                 color: col.RED,
                 url: "/images/car-3-red.jpg",
@@ -77,11 +82,6 @@ const products = [
                 color: col.GREEN,
                 url: "/images/car-3-green.jpg",
                 price: "799$"
-            },
-            {
-                color: col.YELLOW,
-                url: "/images/car-3-yellow.jpg",
-                price: "499$"
             }
         ]
     },
@@ -93,11 +93,6 @@ const products = [
                 color: col.RED,
                 url: "/images/gloves-1-red.jpg",
                 price: "26$"
-            },
-            {
-                color: col.BLUE,
-                url: "/images/gloves-1-blue.jpg",
-                price: "29$"
             },
             {
                 color: col.GREEN,
@@ -117,7 +112,7 @@ const products = [
         ]
     },
     {
-        id: "5", name: "Work Gloves 2000",
+        id: "5", name: "Work Gloves",
         categories: [cat.GLOVES],
         versions: [
             {
@@ -147,6 +142,11 @@ const products = [
         categories: [cat.CHAIRS],
         versions: [
             {
+                color: col.GRAY,
+                url: "/images/chair-1-gray.jpg",
+                price: "67$"
+            },
+            {
                 color: col.RED,
                 url: "/images/chair-1-red.jpg",
                 price: "98$"
@@ -155,11 +155,6 @@ const products = [
                 color: col.BLUE,
                 url: "/images/chair-1-blue.jpg",
                 price: "68$"
-            },
-            {
-                color: col.GRAY,
-                url: "/images/chair-1-gray.jpg",
-                price: "67$"
             },
             {
                 color: col.ORANGE,
