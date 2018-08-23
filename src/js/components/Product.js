@@ -26,16 +26,22 @@ class Product extends React.Component {
         const price = version.price;
 
         return (
-            <div>
-                <img src={imgUrl} alt={name} />
-                {name}
-                <br/>
-                {price}
-                {versions.map((version,index) =>
-                    (
-                        <button key={index} onClick={()=> {this.handleButtonClick(index)}} style={{color: colorsHexes.get(version.color)}}>{index}</button>
-                    )
-                )}
+            <div className="product">
+                <img className="product__image" src={imgUrl} alt={name} />
+                <div className="product__information">
+                    <div className="product__name">{name}</div>
+                    <div className="product__price">{price}</div>
+                    {versions.map((version,index) =>
+                        (
+                            <button className="product__color-sample"
+                                key={index}
+                                onClick={()=> {this.handleButtonClick(index)}}
+                                title={version.color}
+                                style={{backgroundColor: colorsHexes.get(version.color)}}>
+                            </button>
+                        )
+                    )}
+                </div>
             </div>
         );
     }

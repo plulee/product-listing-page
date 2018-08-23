@@ -22,9 +22,8 @@ class Filter extends React.Component {
         };
 
         return (
-            <li onClick={handleButtonClick} className={this.state.active ? 'active': null} >
-                <div>filter</div>
-                <strong>{this.props.filterName}</strong>
+            <li onClick={handleButtonClick} className={this.state.active ? "filters__menu-item filters__menu-item--active": "filters__menu-item"} >
+                {this.props.filterName}
             </li>
         );
     }

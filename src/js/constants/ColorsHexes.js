@@ -1,13 +1,13 @@
 import * as col from "./ColorsNames";
 
 const colorHexes = new Map ([
-    [col.BLUE, "#0000ff"],
-    [col.GRAY, "#d3d3d3"],
-    [col.GREEN, "#00ff00"],
-    [col.ORANGE, "#ffa500"],
-    [col.PINK, "#ff69b4"],
-    [col.RED, "#ff0000"],
-    [col.YELLOW, "#ffff00"],
+    [col.BLUE, "#0074D9"],
+    [col.GRAY, "#DDDDDD"],
+    [col.GREEN, "#2ECC40"],
+    [col.ORANGE, "#FF851B"],
+    [col.PINK, "#F012BE"],
+    [col.RED, "#FF4136"],
+    [col.YELLOW, "#FFDC00"],
 ]);
 
 export default colorHexes;

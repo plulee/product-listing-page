@@ -1,17 +1,19 @@
 @import 'colors';
 @import 'constants';
+@import 'filters';
 @import 'mixins';
+@import 'products';
 
 body {
-    font-family: Tahoma, sans-serif;
+    color: $text-color;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 16px;
     margin: 0;
     padding: 0;
 
-    p,
     h1 {
-        color: $text-color;
-        font-size: 1.2rem;
+        font-size: 2rem;
+        margin-bottom: 2rem;
     }
 
     .container {
@@ -25,7 +27,7 @@ body {
     li {
         margin: 1rem;
 
-        &.active {
+        &.filters__menu-item--active {
             color: red;
         }
     }

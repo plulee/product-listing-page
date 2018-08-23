@@ -34,8 +34,8 @@ class Dropdown extends React.Component {
         }
         return (
             <div className="filters__dropdown">
-                <div onClick={() => {this.handleButtonClick()}} className="filters__filter-name">{filterType}{opened}</div>
-                <ul className="dropdown">
+                <div className="filters__dropdown-name" onClick={() => {this.handleButtonClick()}} >{filterType}{opened}</div>
+                <ul className="filters__menu-items">
                     {Object.values(this.props.filters).map((filter,index) =>
                         (
                             <Filter
