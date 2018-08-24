@@ -18,13 +18,13 @@ class Filter extends React.Component {
             this.props.addFilterFunc();
             this.setState({ active: true });
         }
-    };
+    }
 
     render() {
         const filterActiveClass = this.state.active ? "filters__menu-item--active": "";
 
         return (
-            <li onClick={this.handleButtonClick.bind(this)} 
+            <li onClick={this.handleButtonClick.bind(this)}
                 className={`filters__menu-item ${filterActiveClass}`}>
                 {this.props.filterName}
             </li>

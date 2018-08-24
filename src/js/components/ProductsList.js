@@ -8,7 +8,7 @@ const ProductsList = props => {
 
     const checkFilterElements = (filteredArray, filterArray) => {
         if (filterArray.length > 0) {
-            return filteredArray.some(element => filterArray.indexOf(element) >= 0)
+            return filteredArray.some(element => filterArray.indexOf(element) >= 0);
         } else {
             return true;
         }
@@ -18,8 +18,9 @@ const ProductsList = props => {
         product => {
             let productColors = [];
             for (let version of product.versions) {
-                productColors.push(version.color)
+                productColors.push(version.color);
             }
+
             const checkColors = checkFilterElements(productColors, filters.colors);
             const checkCategories = checkFilterElements(product.categories, filters.categories);
 

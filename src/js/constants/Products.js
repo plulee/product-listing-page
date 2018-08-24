@@ -8,22 +8,22 @@ const products = [
         versions: [
             {
                 color: col.ORANGE,
-                url: "/images/car-1-orange.jpg",
+                url: "./images/car-1-orange.jpg",
                 price: "2$"
             },
             {
                 color: col.RED,
-                url: "/images/car-1-red.jpg",
+                url: "./images/car-1-red.jpg",
                 price: "2.5$"
             },
             {
                 color: col.BLUE,
-                url: "/images/car-1-blue.jpg",
+                url: "./images/car-1-blue.jpg",
                 price: "3$"
             },
             {
                 color: col.GREEN,
-                url: "/images/car-1-green.jpg",
+                url: "./images/car-1-green.jpg",
                 price: "3.5$"
             }
         ]
@@ -34,27 +34,27 @@ const products = [
         versions: [
             {
                 color: col.RED,
-                url: "/images/car-2-red.jpg",
+                url: "./images/car-2-red.jpg",
                 price: "2$"
             },
             {
                 color: col.PINK,
-                url: "/images/car-2-pink.jpg",
+                url: "./images/car-2-pink.jpg",
                 price: "1$"
             },
             {
                 color: col.BLUE,
-                url: "/images/car-2-blue.jpg",
+                url: "./images/car-2-blue.jpg",
                 price: "4$"
             },
             {
                 color: col.GREEN,
-                url: "/images/car-2-green.jpg",
+                url: "./images/car-2-green.jpg",
                 price: "7$"
             },
             {
                 color: col.YELLOW,
-                url: "/images/car-2-yellow.jpg",
+                url: "./images/car-2-yellow.jpg",
                 price: "4$"
             }
         ]
@@ -65,22 +65,22 @@ const products = [
         versions: [
             {
                 color: col.YELLOW,
-                url: "/images/car-3-yellow.jpg",
+                url: "./images/car-3-yellow.jpg",
                 price: "499$"
             },
             {
                 color: col.RED,
-                url: "/images/car-3-red.jpg",
+                url: "./images/car-3-red.jpg",
                 price: "299$"
             },
             {
                 color: col.BLUE,
-                url: "/images/car-3-blue.jpg",
+                url: "./images/car-3-blue.jpg",
                 price: "299$"
             },
             {
                 color: col.GREEN,
-                url: "/images/car-3-green.jpg",
+                url: "./images/car-3-green.jpg",
                 price: "799$"
             }
         ]
@@ -91,22 +91,22 @@ const products = [
         versions: [
             {
                 color: col.RED,
-                url: "/images/gloves-1-red.jpg",
+                url: "./images/gloves-1-red.jpg",
                 price: "26$"
             },
             {
                 color: col.GREEN,
-                url: "/images/gloves-1-green.jpg",
+                url: "./images/gloves-1-green.jpg",
                 price: "28$"
             },
             {
                 color: col.PINK,
-                url: "/images/gloves-1-pink.jpg",
+                url: "./images/gloves-1-pink.jpg",
                 price: "27$"
             },
             {
                 color: col.YELLOW,
-                url: "/images/gloves-1-yellow.jpg",
+                url: "./images/gloves-1-yellow.jpg",
                 price: "25$"
             }
         ]
@@ -117,22 +117,22 @@ const products = [
         versions: [
             {
                 color: col.BLUE,
-                url: "/images/gloves-2-blue.jpg",
+                url: "./images/gloves-2-blue.jpg",
                 price: "19$"
             },
             {
                 color: col.GREEN,
-                url: "/images/gloves-2-green.jpg",
+                url: "./images/gloves-2-green.jpg",
                 price: "20$"
             },
             {
                 color: col.PINK,
-                url: "/images/gloves-2-pink.jpg",
+                url: "./images/gloves-2-pink.jpg",
                 price: "22$"
             },
             {
                 color: col.ORANGE,
-                url: "/images/gloves-2-orange.jpg",
+                url: "./images/gloves-2-orange.jpg",
                 price: "21$"
             }
         ]
@@ -143,22 +143,22 @@ const products = [
         versions: [
             {
                 color: col.GRAY,
-                url: "/images/chair-1-gray.jpg",
+                url: "./images/chair-1-gray.jpg",
                 price: "67$"
             },
             {
                 color: col.RED,
-                url: "/images/chair-1-red.jpg",
+                url: "./images/chair-1-red.jpg",
                 price: "98$"
             },
             {
                 color: col.BLUE,
-                url: "/images/chair-1-blue.jpg",
+                url: "./images/chair-1-blue.jpg",
                 price: "68$"
             },
             {
                 color: col.ORANGE,
-                url: "/images/chair-1-orange.jpg",
+                url: "./images/chair-1-orange.jpg",
                 price: "68$"
             }
         ]

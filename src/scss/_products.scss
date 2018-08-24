@@ -17,17 +17,18 @@
         @include mobile-view {
             max-width: 100%;
         }
-        
+
+        border: 1px solid $light-gray;
         display: block;
+        height: auto;
         max-width: 90%;
         margin-left: auto;
         margin-right: auto;
-        height: auto;
     }
 
     .product__information {
-        margin-top: 2rem;
         margin-bottom: 2rem;
+        margin-top: 2rem;
         text-align: center;
     }
 
@@ -46,9 +47,9 @@
         border-radius: 50%;
         box-shadow: 1px 3px 11px $gray;
         cursor: pointer;
+        height: 1.25rem;
         margin-right: .5rem;
         width: 1.25rem;
-        height: 1.25rem;
 
         &:last-child {
             margin-right: 0;

@@ -11,10 +11,10 @@ class Dropdown extends React.Component {
         };
     }
 
-    handleClickOutside (evt) {
-          this.setState({
+    handleClickOutside () {
+        this.setState({
             opened: false
-          })
+        });
     }
 
     handleButtonClick () {
@@ -32,15 +32,15 @@ class Dropdown extends React.Component {
 
         return (
             <div className="filters__dropdown">
-                <div className={`filters__dropdown-toggle ${dropdownToggledClass}`} onClick={() => {this.handleButtonClick()}} >{filterType}</div>
+                <div className={`filters__dropdown-toggle ${dropdownToggledClass}`} onClick={() => {this.handleButtonClick();}} >{filterType}</div>
                 <ul className="filters__menu-items">
                     {Object.values(this.props.filters).map((filter,index) =>
                         (
                             <Filter
                                 key={index}
                                 filterName ={filter}
-                                addFilterFunc = {() => {this.props.addFilter(filter, filterType)}}
-                                removeFilterFunc = {() => {this.props.removeFilter(filter, filterType)}}
+                                addFilterFunc = {() => {this.props.addFilter(filter, filterType);}}
+                                removeFilterFunc = {() => {this.props.removeFilter(filter, filterType);}}
                             />
                         )
                     )}
@@ -48,7 +48,7 @@ class Dropdown extends React.Component {
             </div>
         );
     }
-};
+}
 
 Dropdown.propTypes = {
     filters: PropTypes.object.isRequired,

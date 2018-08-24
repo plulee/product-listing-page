@@ -13,7 +13,7 @@ class Product extends React.Component {
 
     handleButtonClick (index) {
         this.setState({ chosenVersion: index });
-    };
+    }
 
     render() {
         const name = this.props.name;
@@ -33,7 +33,7 @@ class Product extends React.Component {
                         (
                             <button className="product__color-sample"
                                 key={index}
-                                onClick={()=> {this.handleButtonClick(index)}}
+                                onClick={()=> {this.handleButtonClick(index);}}
                                 title={version.color}
                                 style={{backgroundColor: colorsHexes.get(version.color)}}>
                             </button>

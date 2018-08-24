@@ -8,22 +8,21 @@ const initialState = {
 const filters = (state = {...initialState}, action) => {
     switch (action.type) {
     case types.ADD_FILTER:
-        {
-            const newState = {...state};
-            const filter = action.filterType;
-            const featureToAdd = action.feature;
-            newState[filter] = [...new Set([...state[filter], featureToAdd])]
-            return newState;
-        }
-
+    {
+        const newState = {...state};
+        const filter = action.filterType;
+        const featureToAdd = action.feature;
+        newState[filter] = [...new Set([...state[filter], featureToAdd])];
+        return newState;
+    }
     case types.REMOVE_FILTER:
-        {
-            const newState = {...state};
-            const filter = action.filterType;
-            const featureToRemove = action.feature;
-            newState[filter] = state[filter].filter(feature => feature !== featureToRemove)
-            return newState;
-        }
+    {
+        const newState = {...state};
+        const filter = action.filterType;
+        const featureToRemove = action.feature;
+        newState[filter] = state[filter].filter(feature => feature !== featureToRemove);
+        return newState;
+    }
     default:
         return state;
     }
