@@ -8,7 +8,7 @@ const mapDispatchToProps = (dispatch) => ({
     },
     removeFilter: (feature, filterType) => {
         dispatch(removeFilter(feature, filterType));
-    },
+    }
 });
 
 const Dropdown = connect(() => ({}), mapDispatchToProps)(DropdownComponent);

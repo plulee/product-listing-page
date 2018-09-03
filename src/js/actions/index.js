@@ -11,3 +11,8 @@ export const removeFilter = (feature, filterType) => ({
     feature,
     filterType
 });
+
+export const loading = (loadingIndicator) => ({
+    type: types.LOADING,
+    loadingIndicator
+});

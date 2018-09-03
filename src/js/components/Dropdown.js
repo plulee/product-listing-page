@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Filter from "./Filter";
+import Filter from "../containers/Filter";
 import onClickOutside from "react-onclickoutside";
 
 class Dropdown extends React.Component {
@@ -54,7 +54,7 @@ Dropdown.propTypes = {
     filters: PropTypes.object.isRequired,
     type: PropTypes.string.isRequired,
     addFilter: PropTypes.func.isRequired,
-    removeFilter: PropTypes.func.isRequired
+    removeFilter: PropTypes.func.isRequired,
 };
 
 export default onClickOutside(Dropdown);

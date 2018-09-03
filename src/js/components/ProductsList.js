@@ -5,6 +5,7 @@ import Product from "./Product";
 
 const ProductsList = props => {
     const filters = props.filters;
+    const loadingIndicator = props.loadingIndicator;
 
     const checkFilterElements = (filteredArray, filterArray) => {
         if (filterArray.length > 0) {
@@ -28,6 +29,10 @@ const ProductsList = props => {
         }
     );
 
+    if (loadingIndicator) {
+        return <div className="loading">Loading...</div>;
+    }
+
     return (
         <section className="products">
             {filteredProducts.map(product =>
@@ -47,7 +52,8 @@ ProductsList.propTypes = {
     filters: PropTypes.shape({
         colors: PropTypes.array.isRequired,
         categories: PropTypes.array.isRequired,
-    }).isRequired
+    }).isRequired,
+    loadingIndicator: PropTypes.bool
 };
 
 export default ProductsList;

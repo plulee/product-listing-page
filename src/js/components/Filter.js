@@ -9,15 +9,26 @@ class Filter extends React.Component {
         };
     }
 
+    componentWillUnmount() {
+        clearTimeout(this.timer);
+    }
+
     handleButtonClick () {
-        const currentState = this.state.active;
-        if (currentState) {
-            this.props.removeFilterFunc();
-            this.setState({ active: false });
-        } else {
-            this.props.addFilterFunc();
-            this.setState({ active: true });
-        }
+        const changeFilter = function(){
+            const currentState = this.state.active;
+            if (currentState) {
+                this.props.removeFilterFunc();
+                this.setState({ active: false });
+            } else {
+                this.props.addFilterFunc();
+                this.setState({ active: true });
+            }
+            this.props.loading(!this.props.loadingIndicator);
+        };
+
+        this.props.loading(!this.props.loadingIndicator);
+        setTimeout(changeFilter.bind(this), 1200);
+
     }
 
     render() {
@@ -36,6 +47,8 @@ Filter.propTypes = {
     filterName: PropTypes.string.isRequired,
     addFilterFunc: PropTypes.func.isRequired,
     removeFilterFunc: PropTypes.func.isRequired,
+    loading: PropTypes.func.isRequired,
+    loadingIndicator: PropTypes.bool
 };
 
 export default Filter;
